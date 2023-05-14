@@ -8,55 +8,90 @@ namespace DataStructure_Practice_Problem
     {
         static void Main(string[] args)
         {
-            CustomQueue<string> CustomQueueString = new CustomQueue<string>();
-            //CustomQueueInteger.Run();
+           LinkedList<int> listInt = new LinkedList<int>();
 
-            CustomQueueString.enqueue("pranav");
+            LinkedListNode<int> n = listInt.First;
 
-            CustomQueueString.enqueue("aditya");
-
-            CustomQueueString.enqueue("klc");
-
-            CustomQueueString.enqueue("wwel");
-
-            //CustomQueueString.sort();
-            CustomQueueString.display();
-
+            // Adding Element
+            Console.WriteLine("Enter Element to Add");
+            int iSize = Convert.ToInt32(Console.ReadLine());
+            for(int i = 0; i <  iSize; i++)
+            {
+                Console.Write("Enter {0}  : ",i+1);
+                listInt.AddLast(Convert.ToInt32(Console.ReadLine()));
+            }
 
 
-            CustomQueue<float> CustomQueuefloat= new CustomQueue<float>();
-            //CustomQueueInteger.Run();
+            foreach (var i in listInt)
+            {
+                Console.WriteLine(i);
+            }
 
-            CustomQueuefloat.enqueue(1.5f);
+            //Remove Element
+            Console.WriteLine("Enter Element to Remove");
+            int iNoNew = Convert.ToInt32(Console.ReadLine());
+            listInt.Remove(iNoNew);
 
-            CustomQueuefloat.enqueue(9.6f);
 
-            CustomQueuefloat.enqueue(159.2f);
+            foreach (var i in listInt)
+            {
+                Console.WriteLine(i);
+            }
 
-            CustomQueuefloat.enqueue(63.3f);
+
+            //Replace
+            Console.Write("Enter Element to Replace : ");
+            int iNo1 = Convert.ToInt32(Console.ReadLine());
            
-            CustomQueuefloat.display();
+            foreach (var i in listInt)
+            {
+                
+               if( (n.Value).Equals(iNo1))
+                {
+                    Console.WriteLine("Enter Element to Replace witn {0} : ",iNo1);
+                    int iNo = Convert.ToInt32(Console.ReadLine());
+                    listInt.AddAfter(n,iNo);
+                    listInt.Remove(iNo1);
+                    break;
+                }
+                n=n.Next;
+                
+            }
 
+            foreach (var i in listInt)
+            {
+                Console.WriteLine(i);
+            }
 
-            CustomQueue<int> CustomQueueInteger = new CustomQueue<int>();
-            //CustomQueueInteger.Run();
-
-              CustomQueueInteger.enqueue(1);
-
-            CustomQueueInteger.enqueue(9);
-
-            CustomQueueInteger.enqueue(159);
-
-            CustomQueueInteger.enqueue(63);
-
+            //Update
+            Console.Write("Enter Element to update : ");
+            int iNoUpdate = Convert.ToInt32(Console.ReadLine());
             
-            CustomQueueInteger.display();
+            foreach (var i in listInt)
+            {
+
+                if ((n.Value).Equals(iNo1))
+                {
+                    Console.WriteLine("Enter Element to update After in list {0} : ", iNoUpdate);
+                    int iNo = Convert.ToInt32(Console.ReadLine());
+                    listInt.AddAfter(n, iNoUpdate);
+                    
+                    break;
+                }
+                n = n.Next;
+
+            }
+
+            foreach (var i in listInt)
+            {
+                Console.WriteLine(i);
+            }
 
 
-           
 
 
-            
+
+
 
             Console.ReadKey();
 
