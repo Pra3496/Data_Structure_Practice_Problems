@@ -8,49 +8,49 @@ namespace DataStructure_Practice_Problem
     {
         static void Main(string[] args)
         {
-            CustomStack<string> CustomStackString = new CustomStack<string>();
-            //CustomStackInteger.Run();
+            CustomQueue<string> CustomQueueString = new CustomQueue<string>();
+            //CustomQueueInteger.Run();
 
-            CustomStackString.push("pranav");
+            CustomQueueString.enqueue("pranav");
 
-            CustomStackString.push("aditya");
+            CustomQueueString.enqueue("aditya");
 
-            CustomStackString.push("klc");
+            CustomQueueString.enqueue("klc");
 
-            CustomStackString.push("wwel");
+            CustomQueueString.enqueue("wwel");
 
-            //CustomStackString.sort();
-            CustomStackString.display();
-
-
-
-            CustomStack<float> CustomStackfloat= new CustomStack<float>();
-            //CustomStackInteger.Run();
-
-            CustomStackfloat.push(1.5f);
-
-            CustomStackfloat.push(9.6f);
-
-            CustomStackfloat.push(159.2f);
-
-            CustomStackfloat.push(63.3f);
-            CustomStackfloat.sort();
-            CustomStackfloat.display();
+            //CustomQueueString.sort();
+            CustomQueueString.display();
 
 
-            CustomStack<int> CustomStackInteger = new CustomStack<int>();
-            //CustomStackInteger.Run();
 
-              CustomStackInteger.push(1);
+            CustomQueue<float> CustomQueuefloat= new CustomQueue<float>();
+            //CustomQueueInteger.Run();
 
-            CustomStackInteger.push(9);
+            CustomQueuefloat.enqueue(1.5f);
 
-            CustomStackInteger.push(159);
+            CustomQueuefloat.enqueue(9.6f);
 
-            CustomStackInteger.push(63);
+            CustomQueuefloat.enqueue(159.2f);
 
-            //CustomStackInteger.sort();
-            CustomStackInteger.display();
+            CustomQueuefloat.enqueue(63.3f);
+           
+            CustomQueuefloat.display();
+
+
+            CustomQueue<int> CustomQueueInteger = new CustomQueue<int>();
+            //CustomQueueInteger.Run();
+
+              CustomQueueInteger.enqueue(1);
+
+            CustomQueueInteger.enqueue(9);
+
+            CustomQueueInteger.enqueue(159);
+
+            CustomQueueInteger.enqueue(63);
+
+            
+            CustomQueueInteger.display();
 
 
            
