@@ -9,50 +9,31 @@ namespace DataStructure_Practice_Problem
     {
         static void Main(string[] args)
         {
-           Queue queue = new Queue();
+            SortedOrderList<int> sortedOrderList= new SortedOrderList<int>();
 
-           
+            sortedOrderList.add(456);
 
-            
+            sortedOrderList.add(526);
 
-            // Adding Element
-            Console.WriteLine("Enter Element to Add");
-            int iSize = Convert.ToInt32(Console.ReadLine());
-            for(int i = 0; i <  iSize; i++)
-            {
-                Console.Write("Enter {0}  : ",i+1);
-                queue.Enqueue(Convert.ToInt32(Console.ReadLine()));
-            }
+            sortedOrderList.add(46);
 
 
-            foreach (var i in queue)
-            {
-                Console.WriteLine(i);
-            }
+            sortedOrderList.add(636);
 
-            //Remove Element
-            
-            
-            queue.Dequeue();
+            sortedOrderList.add(5);
 
-            Console.WriteLine("Remove operation Perform");
+            Console.WriteLine("Before sort List");
+
+            sortedOrderList.display();
 
 
-            foreach (var i in queue)
-            {
-                Console.WriteLine(i);
-            }
+            Console.Write("Press any key......");
+            Console.ReadKey();
 
+            Console.WriteLine("After sort List");
+            sortedOrderList.sort();
 
-            //Replace
-           
-
-            queue.Clear();
-
-
-
-
-
+            sortedOrderList.display();
 
             Console.ReadKey();
 
