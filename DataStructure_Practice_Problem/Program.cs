@@ -9,7 +9,7 @@ namespace DataStructure_Practice_Problem
     {
         static void Main(string[] args)
         {
-           Stack stack = new Stack();
+           Queue queue = new Queue();
 
            
 
@@ -21,11 +21,11 @@ namespace DataStructure_Practice_Problem
             for(int i = 0; i <  iSize; i++)
             {
                 Console.Write("Enter {0}  : ",i+1);
-                stack.Push(Convert.ToInt32(Console.ReadLine()));
+                queue.Enqueue(Convert.ToInt32(Console.ReadLine()));
             }
 
 
-            foreach (var i in stack)
+            foreach (var i in queue)
             {
                 Console.WriteLine(i);
             }
@@ -33,12 +33,12 @@ namespace DataStructure_Practice_Problem
             //Remove Element
             
             
-            stack.Pop();
+            queue.Dequeue();
 
             Console.WriteLine("Remove operation Perform");
 
 
-            foreach (var i in stack)
+            foreach (var i in queue)
             {
                 Console.WriteLine(i);
             }
@@ -47,7 +47,7 @@ namespace DataStructure_Practice_Problem
             //Replace
            
 
-            stack.Clear();
+            queue.Clear();
 
 
 
