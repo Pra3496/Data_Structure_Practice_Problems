@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace DataStructure_Practice_Problem
 {
-    public class Stack<T>
+    public class CustomStack<T>
     {
         public Node<T> head;
 

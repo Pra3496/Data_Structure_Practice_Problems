@@ -8,49 +8,49 @@ namespace DataStructure_Practice_Problem
     {
         static void Main(string[] args)
         {
-            CustomLinkedList<string> customLinkedListString = new CustomLinkedList<string>();
-            //customLinkedListInteger.Run();
+            CustomStack<string> CustomStackString = new CustomStack<string>();
+            //CustomStackInteger.Run();
 
-            customLinkedListString.add("pranav");
+            CustomStackString.push("pranav");
 
-            customLinkedListString.add("aditya");
+            CustomStackString.push("aditya");
 
-            customLinkedListString.add("klc");
+            CustomStackString.push("klc");
 
-            customLinkedListString.add("wwel");
+            CustomStackString.push("wwel");
 
-            //customLinkedListString.sort();
-            customLinkedListString.display();
-
-
-
-            CustomLinkedList<float> customLinkedListfloat= new CustomLinkedList<float>();
-            //customLinkedListInteger.Run();
-
-            customLinkedListfloat.add(1.5f);
-
-            customLinkedListfloat.add(9.6f);
-
-            customLinkedListfloat.add(159.2f);
-
-            customLinkedListfloat.add(63.3f);
-            customLinkedListfloat.sort();
-            customLinkedListfloat.display();
+            //CustomStackString.sort();
+            CustomStackString.display();
 
 
-            CustomLinkedList<int> customLinkedListInteger = new CustomLinkedList<int>();
-            //customLinkedListInteger.Run();
 
-              customLinkedListInteger.add(1);
+            CustomStack<float> CustomStackfloat= new CustomStack<float>();
+            //CustomStackInteger.Run();
 
-            customLinkedListInteger.add(9);
+            CustomStackfloat.push(1.5f);
 
-            customLinkedListInteger.add(159);
+            CustomStackfloat.push(9.6f);
 
-            customLinkedListInteger.add(63);
+            CustomStackfloat.push(159.2f);
 
-            //customLinkedListInteger.sort();
-            customLinkedListInteger.display();
+            CustomStackfloat.push(63.3f);
+            CustomStackfloat.sort();
+            CustomStackfloat.display();
+
+
+            CustomStack<int> CustomStackInteger = new CustomStack<int>();
+            //CustomStackInteger.Run();
+
+              CustomStackInteger.push(1);
+
+            CustomStackInteger.push(9);
+
+            CustomStackInteger.push(159);
+
+            CustomStackInteger.push(63);
+
+            //CustomStackInteger.sort();
+            CustomStackInteger.display();
 
 
            
